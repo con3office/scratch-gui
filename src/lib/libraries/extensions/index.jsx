@@ -46,7 +46,30 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import pasorichImage from './pasorich/pasorich.png';
+import pasorichInsetImage from './pasorich/pasorich-small.png';
+
 export default [
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="PaSoRich"
+                description="Name for the 'PaSoRich' extension"
+                id="gui.extension.pasorich.name"
+            />
+        ),
+        extensionId: 'pasorich',
+        iconURL: pasorichImage,
+        insetIconURL: pasorichInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="PaSoRi with Scratch 3.0"
+                description="Description for the 'PaSoRich' extension"
+                id="gui.extension.pasorich.description"
+            />
+        ),
+        featured: true
+    },
     {
         name: (
             <FormattedMessage
