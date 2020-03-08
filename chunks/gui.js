@@ -174,9 +174,10 @@ var handleTelemetryModalOptOut = function handleTelemetryModalOptOut() {
   // ability to compose reducers.
 
   var WrappedGui = Object(redux__WEBPACK_IMPORTED_MODULE_2__["compose"])(_lib_app_state_hoc_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], _lib_hash_parser_hoc_jsx__WEBPACK_IMPORTED_MODULE_5__["default"])(_containers_gui_jsx__WEBPACK_IMPORTED_MODULE_4__["default"]); // TODO a hack for testing the backpack, allow backpack host to be set by url param
+  //    const backpackHostMatches = window.location.href.match(/[?&]backpack_host=([^&]*)&?/);
+  //    const backpackHost = backpackHostMatches ? backpackHostMatches[1] : null;
 
-  var backpackHostMatches = window.location.href.match(/[?&]backpack_host=([^&]*)&?/);
-  var backpackHost = backpackHostMatches ? backpackHostMatches[1] : null;
+  var backpackHost = 'con3';
   var scratchDesktopMatches = window.location.href.match(/[?&]isScratchDesktop=([^&]+)/);
   var simulateScratchDesktop;
 
@@ -205,7 +206,6 @@ var handleTelemetryModalOptOut = function handleTelemetryModalOptOut() {
   }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WrappedGui, {
     canEditTitle: true,
     backpackVisible: true,
-    showComingSoon: true,
     backpackHost: backpackHost,
     canSave: false,
     onClickLogo: onClickLogo
