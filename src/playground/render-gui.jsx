@@ -40,8 +40,9 @@ export default appTarget => {
     )(GUI);
 
     // TODO a hack for testing the backpack, allow backpack host to be set by url param
-    const backpackHostMatches = window.location.href.match(/[?&]backpack_host=([^&]*)&?/);
-    const backpackHost = backpackHostMatches ? backpackHostMatches[1] : null;
+//    const backpackHostMatches = window.location.href.match(/[?&]backpack_host=([^&]*)&?/);
+//    const backpackHost = backpackHostMatches ? backpackHostMatches[1] : null;
+    const backpackHost = 'con3';
 
     const scratchDesktopMatches = window.location.href.match(/[?&]isScratchDesktop=([^&]+)/);
     let simulateScratchDesktop;
