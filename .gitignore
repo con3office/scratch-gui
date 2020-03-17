@@ -17,3 +17,6 @@ npm-*
 # Generated translation files
 /translations
 /locale
+
+package.json
+package-lock.json
