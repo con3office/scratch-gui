@@ -54,6 +54,10 @@ import microbitMoreInsetIconURL from './microbitMore/microbitMore-small.svg';
 import microbitMoreConnectionIconURL from './microbitMore/microbitMore-illustration.svg';
 import microbitMoreConnectionSmallIconURL from './microbitMore/microbitMore-small.svg';
 
+import numberbankImage from './numberbank/numberbank.png';
+import numberbankInsetImage from './numberbank/numberbank-small.png';
+
+
 export default [
     {
         name: (
@@ -74,7 +78,8 @@ export default [
                 id="gui.extension.pasorich.description"
             />
         ),
-        featured: true
+        featured: true,
+        helpLink: 'https://con3.com/sc2scratch/'
     },
     {
         name: 'micro:bit More',
@@ -105,6 +110,28 @@ export default [
             />
         ),
         helpLink: 'https://lab.yengawa.com/project/scratch-microbit-more/'
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="NumberBank"
+                description="Name for the 'NumberBank' extension"
+                id="gui.extension.numberbank.name"
+            />
+        ),
+        extensionId: 'numberbank',
+        collaborator: 'con3office',
+        iconURL: numberbankImage,
+        insetIconURL: numberbankInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Store Numbers to Cloud"
+                description="Description for the 'NumberBank' extension"
+                id="gui.extension.numberbank.description"
+            />
+        ),
+        featured: true,
+        helpLink: 'https://con3.com/sc2scratch/'
     },
     {
         name: (
