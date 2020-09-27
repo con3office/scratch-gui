@@ -60,13 +60,7 @@ import numberbankInsetImage from './numberbank/numberbank-small.png';
 
 export default [
     {
-        name: (
-            <FormattedMessage
-                defaultMessage="PaSoRich"
-                description="Name for the 'PaSoRich' extension"
-                id="gui.extension.pasorich.name"
-            />
-        ),
+        name: 'PaSoRich',
         extensionId: 'pasorich',
         collaborator: 'con3office',
         iconURL: pasorichImage,
@@ -112,13 +106,7 @@ export default [
         helpLink: 'https://lab.yengawa.com/project/scratch-microbit-more/'
     },
     {
-        name: (
-            <FormattedMessage
-                defaultMessage="NumberBank"
-                description="Name for the 'NumberBank' extension"
-                id="gui.extension.numberbank.name"
-            />
-        ),
+        name: 'NumberBank',
         extensionId: 'numberbank',
         collaborator: 'con3office',
         iconURL: numberbankImage,
