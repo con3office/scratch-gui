@@ -67,9 +67,25 @@ export default [
         insetIconURL: pasorichInsetImage,
         description: (
             <FormattedMessage
-                defaultMessage="Read SmartCard's Idm"
+                defaultMessage="Read SmartCard's Idm."
                 description="Description for the 'PaSoRich' extension"
                 id="gui.extension.pasorich.description"
+            />
+        ),
+        featured: true,
+        helpLink: 'https://con3.com/sc2scratch/'
+    },
+    {
+        name: 'NumberBank',
+        extensionId: 'numberbank',
+        collaborator: 'con3office',
+        iconURL: numberbankImage,
+        insetIconURL: numberbankInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Store Numbers to Cloud."
+                description="Description for the 'NumberBank' extension"
+                id="gui.extension.numberbank.description"
             />
         ),
         featured: true,
@@ -104,22 +120,6 @@ export default [
             />
         ),
         helpLink: 'https://lab.yengawa.com/project/scratch-microbit-more/'
-    },
-    {
-        name: 'NumberBank',
-        extensionId: 'numberbank',
-        collaborator: 'con3office',
-        iconURL: numberbankImage,
-        insetIconURL: numberbankInsetImage,
-        description: (
-            <FormattedMessage
-                defaultMessage="Store Numbers to Cloud"
-                description="Description for the 'NumberBank' extension"
-                id="gui.extension.numberbank.description"
-            />
-        ),
-        featured: true,
-        helpLink: 'https://con3.com/sc2scratch/'
     },
     {
         name: (
