@@ -89,7 +89,7 @@ export default [
             />
         ),
         featured: true,
-        helpLink: 'https://con3.com/sc2scratch/'
+        helpLink: 'https://con3.com/numberbank/'
     },
     {
         name: 'micro:bit More',
