@@ -60,7 +60,13 @@ import numberbankInsetImage from './numberbank/numberbank-small.png';
 
 export default [
     {
-        name: 'PaSoRich',
+        name: (
+            <FormattedMessage
+                defaultMessage="PaSoRich"
+                description="Name for the 'PaSoRich' extension"
+                id="gui.extension.pasorich.name"
+            />
+        ),
         extensionId: 'pasorich',
         collaborator: 'con3office',
         iconURL: pasorichImage,
@@ -78,7 +84,13 @@ export default [
         helpLink: 'https://con3.com/sc2scratch/'
     },
     {
-        name: 'NumberBank',
+        name: (
+            <FormattedMessage
+                defaultMessage="NumberBank"
+                description="Name for the 'NumberBank' extension"
+                id="gui.extension.numberbank.name"
+            />
+        ),
         extensionId: 'numberbank',
         collaborator: 'con3office',
         iconURL: numberbankImage,
