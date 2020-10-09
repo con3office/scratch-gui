@@ -67,12 +67,14 @@ export default [
         insetIconURL: pasorichInsetImage,
         description: (
             <FormattedMessage
-                defaultMessage="Read SmartCard's Idm."
+                defaultMessage="Read SmartCard's IDm."
                 description="Description for the 'PaSoRich' extension"
                 id="gui.extension.pasorich.description"
             />
         ),
+        internetConnectionRequired: false,
         featured: true,
+        disabled: false,
         helpLink: 'https://con3.com/sc2scratch/'
     },
     {
@@ -88,7 +90,9 @@ export default [
                 id="gui.extension.numberbank.description"
             />
         ),
+        internetConnectionRequired: true,
         featured: true,
+        disabled: false,
         helpLink: 'https://con3.com/numberbank/'
     },
     {
