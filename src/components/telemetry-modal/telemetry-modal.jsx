@@ -101,9 +101,6 @@ class TelemetryModal extends React.PureComponent {
                             privacyPolicyLink: (<a
                                 className={styles.privacyPolicyLink}
                                 href="https://scratch.mit.edu/privacy_policy/"
-                                onClick={this.props.onShowPrivacyPolicy}
-                                target="_blank"
-                                rel="noopener noreferrer"
                             >
                                 <FormattedMessage {...messages.privacyPolicyLink} />
                             </a>)
@@ -137,8 +134,7 @@ TelemetryModal.propTypes = {
     onCancel: PropTypes.func,
     onOptIn: PropTypes.func.isRequired,
     onOptOut: PropTypes.func.isRequired,
-    onRequestClose: PropTypes.func,
-    onShowPrivacyPolicy: PropTypes.func
+    onRequestClose: PropTypes.func
 };
 
 export default injectIntl(TelemetryModal);
