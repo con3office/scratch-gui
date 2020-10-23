@@ -108,16 +108,17 @@ export default [
         helpLink: 'https://con3.com/numberbank/'
     },
     {
-        name: 'micro:bit More',
+        name: 'micro:bit MORE v0.5.0',
         extensionId: 'microbitMore',
+        extensionURL: 'https://yokobond.github.io/scratch-microbit-more/dist/microbitMore.mjs',
         collaborator: 'Yengawa Lab',
         iconURL: microbitMoreIconURL,
         insetIconURL: microbitMoreInsetIconURL,
         description: (
             <FormattedMessage
-                defaultMessage="Connect your projects with the world."
-                description="Description for the 'micro:bit' extension"
-                id="gui.extension.microbit.description"
+                defaultMessage="Play with all functions of micro:bit."
+                description="Description for the 'micro:bit MORE' extension"
+                id="gui.extension.microbitMore.description"
             />
         ),
         featured: true,
