@@ -110,6 +110,7 @@ export default [
     {
         name: 'micro:bit MORE v0.5.0',
         extensionId: 'microbitMore',
+        extensionURL: 'https://yokobond.github.io/scratch-microbit-more/dist/microbitMore.mjs',
         collaborator: 'Yengawa Lab',
         iconURL: microbitMoreIconURL,
         insetIconURL: microbitMoreInsetIconURL,
