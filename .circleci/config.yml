@@ -4,40 +4,74 @@ aliases:
     save_cache:
       paths:
         - .git
+<<<<<<< HEAD
       key: v1-git-{{ .Revision }}
   - &restore_git_cache
     restore_cache:
       keys:
         - v1-git-{{ .Revision }}
         - v1-git-
+=======
+      key: v3-git-{{ .Revision }}
+  - &restore_git_cache
+    restore_cache:
+      keys:
+        - v3-git-{{ .Revision }}
+        - v3-git-
+>>>>>>> upstream/develop
   - &save_build_cache
     save_cache:
       paths:
         - build
+<<<<<<< HEAD
       key: v1-build-{{ .Revision }}
   - &restore_build_cache
     restore_cache:
       keys:
         - v1-build-{{ .Revision }}
+=======
+      key: v3-build-{{ .Revision }}
+  - &restore_build_cache
+    restore_cache:
+      keys:
+        - v3-build-{{ .Revision }}
+>>>>>>> upstream/develop
   - &save_dist_cache
     save_cache:
       paths:
         - dist
+<<<<<<< HEAD
       key: v1-dist-{{ .Revision }}
   - &restore_dist_cache
     restore_cache:
       keys:
         - v1-dist-{{ .Revision }}
+=======
+      key: v3-dist-{{ .Revision }}
+  - &restore_dist_cache
+    restore_cache:
+      keys:
+        - v3-dist-{{ .Revision }}
+>>>>>>> upstream/develop
   - &save_npm_cache
     save_cache:
       paths:
         - node_modules
+<<<<<<< HEAD
       key: v1-npm-{{ checksum "package-lock.json" }}
   - &restore_npm_cache
     restore_cache:
       keys:
         - v1-npm-{{ checksum "package-lock.json" }}
         - v1-npm-
+=======
+      key: v3-npm-{{ checksum "package-lock.json" }}
+  - &restore_npm_cache
+    restore_cache:
+      keys:
+        - v3-npm-{{ checksum "package-lock.json" }}
+        - v3-npm-
+>>>>>>> upstream/develop
   - &defaults
     docker:
       - image: circleci/node:8.16-browsers
