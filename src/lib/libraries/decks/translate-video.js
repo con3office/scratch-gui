@@ -11,9 +11,6 @@ const videos = {
         'pt': 'ngdfp8xg4x',
         'pt-br': 'ngdfp8xg4x',
         'ja': 'v2c2f3y2sc',
-<<<<<<< HEAD
-        'ja-Hira': 'v2c2f3y2sc'
-=======
         'ja-Hira': 'v2c2f3y2sc',
         'es': 'htk2m9o65l',
         'es-419': 'htk2m9o65l',
@@ -41,7 +38,6 @@ const videos = {
         'th': 'zy7suscqn2',
         'tr': 'p3g8ek3cuh',
         'vi': 'fetjky76s4'
->>>>>>> upstream/develop
     },
     'animate-a-name': {
         'en': 'pyur30ho05',

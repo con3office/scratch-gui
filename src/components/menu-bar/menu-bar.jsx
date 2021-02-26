@@ -363,11 +363,8 @@ class MenuBar extends React.Component {
                 {remixMessage}
             </Button>
         );
-<<<<<<< HEAD
-=======
         // Show the About button only if we have a handler for it (like in the desktop app)
         const aboutButton = this.buildAboutMenu(this.props.onClickAbout);
->>>>>>> upstream/develop
         return (
             <Box
                 className={classNames(
@@ -769,8 +766,6 @@ MenuBar.propTypes = {
     locale: PropTypes.string.isRequired,
     loginMenuOpen: PropTypes.bool,
     logo: PropTypes.string,
-<<<<<<< HEAD
-=======
     onClickAbout: PropTypes.oneOfType([
         PropTypes.func, // button mode: call this callback when the About button is clicked
         PropTypes.arrayOf( // menu mode: list of items in the About menu
@@ -780,7 +775,6 @@ MenuBar.propTypes = {
             })
         )
     ]),
->>>>>>> upstream/develop
     onClickAccount: PropTypes.func,
     onClickEdit: PropTypes.func,
     onClickFile: PropTypes.func,
