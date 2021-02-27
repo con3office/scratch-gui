@@ -57,6 +57,9 @@ import microbitMoreConnectionSmallIconURL from './microbitMore/microbitMore-smal
 import numberbankImage from './numberbank/numberbank.png';
 import numberbankInsetImage from './numberbank/numberbank-small.png';
 
+import qrcodeIconURL from './qrcode/qrcode.png';
+import qrcodeInsetIconURL from './qrcode/qrcode-small.svg';
+
 
 export default [
     {
@@ -106,6 +109,27 @@ export default [
         featured: true,
         disabled: false,
         helpLink: 'https://con3.com/numberbank/'
+    },
+    {
+        name: 'QRコード',
+        extensionId: 'qrcode',
+        collaborator: 'Sugiura Lab',
+        iconURL: qrcodeIconURL,
+        insetIconURL: qrcodeInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage='QRコードを読み取ります。{credit}'
+                description='QRコードを読み取ります。{credit}'
+                values={{
+                    credit:<div style={{fontSize: '0.6em'}}>QRコードは株式会社デンソーウェーブの登録商標です。</div>
+                }}
+                id='gui.extension.qrcodeblocks.description'
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: false,
+        bluetoothRequired: false
     },
     {
         name: 'micro:bit MORE v0.5.0',
