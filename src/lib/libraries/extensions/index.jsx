@@ -57,6 +57,9 @@ import microbitMoreConnectionSmallIconURL from './microbitMore/microbitMore-smal
 import numberbankImage from './numberbank/numberbank.png';
 import numberbankInsetImage from './numberbank/numberbank-small.png';
 
+import sc2scratchImage from './sc2scratch/sc2scratch.png';
+import sc2scratchInsetImage from './sc2scratch/sc2scratch-small.png';
+
 import qrcodeIconURL from './qrcode/qrcode.png';
 import qrcodeInsetIconURL from './qrcode/qrcode-small.svg';
 
@@ -109,6 +112,30 @@ export default [
         featured: true,
         disabled: false,
         helpLink: 'https://con3.com/numberbank/'
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="sc2scratch"
+                description="Name for the 'sc2scratch' extension"
+                id="gui.extension.sc2scratch.name"
+            />
+        ),
+        extensionId: 'sc2scratch',
+        collaborator: 'con3office',
+        iconURL: sc2scratchImage,
+        insetIconURL: sc2scratchInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Read SmartCard's IDm."
+                description="Description for the 'sc2scratch' extension"
+                id="gui.extension.sc2scratch.description"
+            />
+        ),
+        internetConnectionRequired: false,
+        featured: true,
+        disabled: false,
+        helpLink: 'https://con3.com/sc2scratch/'
     },
     {
         name: 'QRコード',
