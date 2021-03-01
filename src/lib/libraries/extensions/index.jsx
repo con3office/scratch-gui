@@ -113,7 +113,7 @@ export default [
         disabled: false,
         helpLink: 'https://con3.com/numberbank/'
     },
-    {
+/*    {
         name: (
             <FormattedMessage
                 defaultMessage="sc2scratch"
@@ -137,7 +137,7 @@ export default [
         disabled: false,
         helpLink: 'https://con3.com/sc2scratch/'
     },
-    {
+*/    {
         name: 'QRコード',
         extensionId: 'qrcode',
         collaborator: 'Sugiura Lab',
